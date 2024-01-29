@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.MemberDAO;
-import VO.MemberVO;
+import dao.MemberDAO;
+import vo.MemberVO;
 
 @WebServlet("/Join")
 public class JoinController extends HttpServlet {
@@ -47,11 +47,11 @@ public class JoinController extends HttpServlet {
 		
 		if(result>0) {
 			
-			response.getWriter().append("<script>alert('íšŒì›ê°€ì… ë˜ì—ˆìŠµë‹ˆë‹¤.'); location.href='http://localhost:8080/jeonjuwiki'</script>");
+			response.getWriter().append("<script>alert('?šŒ?›ê°??… ?˜?—ˆ?Šµ?‹ˆ?‹¤.'); location.href='http://localhost:8080/jeonjuwiki'</script>");
 			
 		}else{
 			
-			response.getWriter().append("<script>alert('íšŒì›ê°€ì…ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.'); location.href='http://localhost:8080/jeonjuwiki'</script>");
+			response.getWriter().append("<script>alert('?šŒ?›ê°??…?— ?‹¤?Œ¨?–ˆ?Šµ?‹ˆ?‹¤.'); location.href='http://localhost:8080/jeonjuwiki'</script>");
 
 		}
 		

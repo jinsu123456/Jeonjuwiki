@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -30,9 +30,9 @@ public class UserContoller extends HttpServlet {
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
 		
-		//DB ì €ì¥ í–ˆë‹¤ê³  ê°€ì • (DBì—ëŠ” emailAuth í•„ë“œê°€ ìˆì–´ì•¼ í•˜ê³  ìµœì´ˆì—ëŠ” 0ì´ ì €ì¥ë˜ì–´ ìˆìŒ) 1 ì¸ì¦ 0 ë¯¸ì¸ì¦
+		//DB ???¥ ?–ˆ?‹¤ê³? ê°?? • (DB?—?Š” emailAuth ?•„?“œê°? ?ˆ?–´?•¼ ?•˜ê³? ìµœì´ˆ?—?Š” 0?´ ???¥?˜?–´ ?ˆ?Œ) 1 ?¸ì¦? 0 ë¯¸ì¸ì¦?
 		
-		//DBì— ì €ì¥í–ˆìœ¼ë‹ˆ google email ì¸ì¦ í˜ì´ì§€ë¡œ ì´ë™
+		//DB?— ???¥?–ˆ?œ¼?‹ˆ google email ?¸ì¦? ?˜?´ì§?ë¡? ?´?™
 		response.sendRedirect("/AuthGoogle/gmailSendAction.jsp?email="+email);
 	}
 

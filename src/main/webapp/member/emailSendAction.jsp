@@ -5,8 +5,8 @@
 <%@ page import="util.SHA256"%>
 <%@ page import="java.util.Properties"%>
 <%@ page import="java.io.PrintWriter"%>
-<%@page import="DAO.MemberDAO"%>
-<%@page import="VO.MemberVO"%>
+<%@page import="dao.MemberDAO"%>
+<%@page import="vo.MemberVO"%>
 
 <%
 	MemberDAO memberDAO = new MemberDAO();

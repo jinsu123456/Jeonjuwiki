@@ -1,17 +1,17 @@
-package DAO;
+package dao;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import VO.MemberVO;
 import util.DBManager;
+import vo.MemberVO;
 
 public class MemberDAO {
 
 	DBManager DBM = DBManager.getInstance();
 	
-	// íšŒì›ê°€ì… ë©”ì†Œë“œ
+	// ?šŒ?›ê°??… ë©”ì†Œ?“œ
 	public int join(MemberVO vo) throws SQLException {
 		
 		String sql = "INSERT INTO member (mid, mpw, mphone, memail, mnick, mrdate, mgrade, mpimg_realnm, mname, memail_hash) ";

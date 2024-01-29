@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@page import="VO.MemberVO"%>
-<%@page import="DAO.MemberDAO"%>
+<%@page import="vo.MemberVO"%>
+<%@page import="dao.MemberDAO"%>
 <%@ page import="util.SHA256"%>
 <%@ page import="java.io.PrintWriter"%>
 

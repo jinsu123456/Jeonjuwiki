@@ -1,4 +1,4 @@
-<%@page import="DAO.MemberDAO"%>
+<%@page import="dao.MemberDAO"%>
 <%@page import="java.io.PrintWriter"%>
 <%@page import="util.SHA256"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>

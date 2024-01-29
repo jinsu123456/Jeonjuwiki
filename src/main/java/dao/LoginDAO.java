@@ -1,11 +1,11 @@
-package DAO;
+package dao;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import VO.MemberVO;
 import util.DBManager;
+import vo.MemberVO;
 
 public class LoginDAO {
 

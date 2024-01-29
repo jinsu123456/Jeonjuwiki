@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import DAO.LoginDAO;
-import VO.MemberVO;
+import dao.LoginDAO;
+import vo.MemberVO;
 
 
 
@@ -48,11 +48,11 @@ public class LoginController extends HttpServlet {
 			HttpSession session = req.getSession();
 			session.setAttribute("login", m);
 			
-			res.getWriter().append("<script>alert('ë¡œê·¸ì¸ ë˜ì—ˆìŠµë‹ˆë‹¤.'); location.href='http://localhost:8080/jspboard'</script>");
+			res.getWriter().append("<script>alert('ë¡œê·¸?¸ ?˜?—ˆ?Šµ?‹ˆ?‹¤.'); location.href='http://localhost:8080/jspboard'</script>");
 			
 		}else{
 			
-			res.getWriter().append("<script>alert('ë¡œê·¸ì¸ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.'); location.href='http://localhost:8080/jspboard'</script>");
+			res.getWriter().append("<script>alert('ë¡œê·¸?¸?˜ì§? ?•Š?•˜?Šµ?‹ˆ?‹¤.'); location.href='http://localhost:8080/jspboard'</script>");
 
 		}
 		
