@@ -96,6 +96,13 @@ public class DBManager {
 		}
 		
 	}
+	public void setInt(int num1, int num2) throws SQLException {
+		this.psmt.setInt(num1, num2);
+	}
+	
+	public void setString(int num1, String str) throws SQLException {
+		this.psmt.setString(num1, str);
+	}
 	
 	// executeQuery() 메소드
 	public void executeQuery() throws SQLException {
@@ -112,14 +119,41 @@ public class DBManager {
 		return this.psmt.executeUpdate();
 	}
 	
+	public int getInt(String colName) throws SQLException{
+		return this.rs.getInt(colName);
+	}
+	
+	public String getString(String colName) throws SQLException{
+		return this.rs.getString(colName);
+	}
 	
 	
 	
 	// DB 종료 메소드
-	public boolean DBClose(){
+	public boolean dbCloseConn(){
 		try{
 			if(this.conn!=null) this.conn.close();
+			return true;
+			
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		
+	}
+	public boolean dbCloseRs(){
+		try{
 			if(this.rs!=null) this.rs.close();
+			return true;
+			
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		
+	}
+	public boolean dbClosePsmt(){
+		try{
 			if(this.psmt!=null) this.psmt.close();
 			return true;
 			

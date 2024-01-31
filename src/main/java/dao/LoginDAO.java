@@ -39,7 +39,9 @@ public class LoginDAO {
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally{
-			DBM.DBClose();
+			DBM.dbCloseConn();
+			DBM.dbClosePsmt();
+			DBM.dbCloseRs();
 		}
 		
 		return m;

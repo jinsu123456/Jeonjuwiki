@@ -1,7 +1,7 @@
 package vo;
 
 public class PlaceVO {
-	private String pno;
+	private int pno;
 	private String pname;
 	private String paddr1;
 	private String paddr2;
@@ -11,12 +11,12 @@ public class PlaceVO {
 	private String pimg2;
 	private String pmapx;
 	private String pmapy;
-	private String pmlevel;
+	private int pmlevel;
 	
-	public PlaceVO(){};
+	public PlaceVO(){}
 	
-	public PlaceVO(String pno, String pname, String paddr1, String paddr2, String pcontentid, String ptel, String pimg1,
-			String pimg2, String pmapx, String pmapy, String pmlevel) {
+	public PlaceVO(int pno, String pname, String paddr1, String paddr2, String pcontentid, String ptel, String pimg1,
+			String pimg2, String pmapx, String pmapy, int pmlevel) {
 		this.pno = pno;
 		this.pname = pname;
 		this.paddr1 = paddr1;
@@ -29,10 +29,25 @@ public class PlaceVO {
 		this.pmapy = pmapy;
 		this.pmlevel = pmlevel;
 	}
-	public String getPno() {
+	
+	public PlaceVO(String pname, String paddr1, String paddr2, String pcontentid, String ptel, String pimg1,
+			String pimg2, String pmapx, String pmapy, int pmlevel) {
+		this.pname = pname;
+		this.paddr1 = paddr1;
+		this.paddr2 = paddr2;
+		this.pcontentid = pcontentid;
+		this.ptel = ptel;
+		this.pimg1 = pimg1;
+		this.pimg2 = pimg2;
+		this.pmapx = pmapx;
+		this.pmapy = pmapy;
+		this.pmlevel = pmlevel;
+	}
+	
+	public int getPno() {
 		return pno;
 	}
-	public void setPno(String pno) {
+	public void setPno(int pno) {
 		this.pno = pno;
 	}
 	public String getPname() {
@@ -54,6 +69,9 @@ public class PlaceVO {
 		this.paddr2 = paddr2;
 	}
 	public String getPcontentid() {
+		return pcontentid;
+	}
+	public String pimg1() {
 		return pcontentid;
 	}
 	public void setPcontentid(String pcontentid) {
@@ -89,10 +107,10 @@ public class PlaceVO {
 	public void setPmapy(String pmapy) {
 		this.pmapy = pmapy;
 	}
-	public String getPmlevel() {
+	public int getPmlevel() {
 		return pmlevel;
 	}
-	public void setPmlevel(String pmlevel) {
+	public void setPmlevel(int pmlevel) {
 		this.pmlevel = pmlevel;
 	}
 }
